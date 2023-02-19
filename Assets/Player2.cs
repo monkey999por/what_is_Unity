@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 30f;
     public float rightLimit = 4.5f;
     public float leftLimit = -4.5f;
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.Z))
         {
             if (this.transform.position.x > leftLimit)
             {
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.X))
         {
             if (this.transform.position.x < rightLimit)
             {
