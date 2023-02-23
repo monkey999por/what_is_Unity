@@ -50,4 +50,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void ToggleChange(bool val)
+
+    {
+        Debug.Log("toggle change widh game manager: " + val);
+
+    }
+
 }
